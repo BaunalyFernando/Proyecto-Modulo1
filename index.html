@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+</head>
+
+<body>
+    <header>
+        <h1 id="titleCenter">Proyecto M1</h1>
+        <nav id="nav">
+            <a href="#aboutMe">
+                <span class="navOption"> Acerca de mi</span>
+            </a>
+            <a href="#techContainer">
+                <span class="navOption"> Mis Tenologias Favoritas</span>
+            </a>
+            <a href="#form">
+                <span class="navOption"> Mis Actvidades Favoritas</span>
+            </a>
+        </nav>
+
+    </header>
+    <main>
+
+        <section id="sectionAbout">
+            <div id="aboutMe">
+                <h2>¿Quien soy?</h2>
+                <p>Soy Fernando, tengo 25 años y vivo en Tafi Viejo Tucuman, Argentina</p>
+            </div>
+
+        </section>
+
+        <section id="techContainer">
+            <h2>Mis tecnologias favoritas</h2>
+            <br>
+            <div id="cardContainer">
+
+
+                <div class="card">
+                    <h3>HTML</h3>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="" class="logo">
+                </div>
+                <div class="card">
+                    <h3>CSS</h3>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="" class="logo">
+                </div>
+                <div class="card">
+                    <h3>JAVASCRIPT</h3>
+                    <img src="https://seeklogo.com/images/J/java-script-js-logo-ACF4AE5082-seeklogo.com.png" alt="" class="logo">
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+            <h2 class="titleActivities">Mis actividades favoritas</h2>
+            <form id="form">
+                <div class="form-container">
+                    <label for="">Nombre de la actividad</label>
+                    <input type="text" id="title" placeholder="Nombre de la actividad">
+
+                    <label for="">Descripcion</label>
+                    <input type="text" id="description" placeholder="Descripcion de la actividad">
+
+                    <label for="">Imagen de la actividad</label>
+                    <input type="text" id="imgUrl" placeholder="Imagen de la actividad">
+                    <br>
+                    <div>
+                        <button id="submit" class="button">Crear Actividad</button>
+                    </div>
+                </div>
+
+            </form>
+
+
+            <section id="form-Activities">
+
+                <div id="activities-container">
+
+                </div>
+            </section>
+
+
+        </section>
+    </main>
+
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>
